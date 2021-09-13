@@ -13,12 +13,11 @@ logInBtn.addEventListener("click", () => {
     checkUser();
 })
 // checkUser()-------------------------------------------------------------------------------------------------------------------------
-// funktion för att kolla om användarens angivna uppgifter stämmer.Om både namnet och lösenordet stämmer så lagras infon i localStorage.
+// funktion för att kolla om användarens angivna uppgifter stämmer.Om både namnet och lösenordet stämmer så lagras namnet i localStorage.
 // Oavsett om informationen stämmer eller ej så aktiveras funktionen buildSite().
 function checkUser() {
     if (userName.value === correctN && pw.value === correctPw) {
         localStorage.setItem("name", userName.value);
-        localStorage.setItem("password", pw.value);
     }
     buildSite();
 }
@@ -42,7 +41,7 @@ function buildSite() {
     logOutBtn.addEventListener("click", () => {
         localStorage.clear();
         logInField.style.display = "block";
-        newField.remove(newField);
+        newField.remove();
     })
     document.body.appendChild(newField);
     newField.appendChild(legend);
