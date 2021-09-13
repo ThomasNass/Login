@@ -3,6 +3,7 @@ Träning för att skapa en inloggningssida som möter specifika kriterier(finns 
 
 Kravspecifikation:
 1.Sidan skall ha en meny som innehåller två stycken input-fält,  namn och lösenord, samt en knapp för att logga in.
+
 2.Namn och lösenord skall vara hårdkodade variabler i ditt javascript och vara: namn = "test", lösenord = "1234".
 3.Skriver du rätt namn och lösenord så skall du mötas av en ny sida som välkomnar dig till sidan.
 4.Skriver du fel lösenord så skall du mötas av en ny sida som informerar om att det blivit fel.
