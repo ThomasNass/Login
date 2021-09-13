@@ -1,8 +1,10 @@
+// Deklaration av variablar hämtade från html-filen
 const logInField = document.querySelector("#logInField");
 const userName = document.querySelector("#userName");
 const pw = document.querySelector("#pw");
 const logInBtn = document.querySelector("#logInBtn");
 
+// De korrekta värdena för namn och lösenord
 const correctN = "test";
 const correctPw = "1234";
 
@@ -10,7 +12,7 @@ const correctPw = "1234";
 logInBtn.addEventListener("click", () => {
     checkUser();
 })
-
+// checkUser()-------------------------------------------------------------------------------------------------------------------------
 // funktion för att kolla om användarens angivna uppgifter stämmer.Om både namnet och lösenordet stämmer så lagras infon i localStorage.
 // Oavsett om informationen stämmer eller ej så aktiveras funktionen buildSite().
 function checkUser() {
@@ -20,7 +22,7 @@ function checkUser() {
     }
     buildSite();
 }
-
+// buldSite()-------------------------------------------------------------------------------------------------------------------
 // I funktionen buildSite() döljs inloggningssidan och istället visas en sida som baseras på vad användaren skrev in.
 // Inloggningssidan och felsidan är egentligen likadan, men texten som berättar vad samt texten på knappen skiljer sig åt.
 // Koden avgör om det är rätt eller fel beroende på om det finns ett namn lagrat i localStorage.
@@ -46,6 +48,7 @@ function buildSite() {
     newField.appendChild(legend);
     newField.appendChild(logOutBtn);
 }
+
 //Här görs en kontroll om det finns ett namn i localStorage.
 //Om så är fallet så körs funktionen buildSite() och sidan byggs så att användaren är inloggad.
 //Finns inget namn så laddas inloggningssidan.
