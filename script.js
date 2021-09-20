@@ -9,9 +9,7 @@ const correctN = "test";
 const correctPw = "1234";
 
 //När användaren klickar på knappen så körs funktionen checkUser
-logInBtn.addEventListener("click", () => {
-    checkUser();
-})
+logInBtn.addEventListener("click", checkUser);
 // checkUser()-------------------------------------------------------------------------------------------------------------------------
 // funktion för att kolla om användarens angivna uppgifter stämmer.Om både namnet och lösenordet stämmer så lagras namnet i localStorage.
 // Oavsett om informationen stämmer eller ej så aktiveras funktionen buildSite().
