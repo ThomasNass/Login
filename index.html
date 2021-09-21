@@ -6,19 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 
 <body>
-    <fieldset id="logInField">
-        <legend>Logga in</legend>
-        <i class="fas fa-user"></i>
-        <input type="text" id="userName" placeholder="namn">
-        <i class="fas fa-lock"></i>
-        <input type="password" id="pw" placeholder="lösenord">
-        <input type="button" value="logga in" id="logInBtn">
-    </fieldset>
 
+    <div class="page">
+        <fieldset id="logInField">
+            <legend>Logga in</legend>
+            <i class="fas fa-user"></i>
+            <input type="text" id="userName" placeholder="namn">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="pw" placeholder="lösenord">
+            <input type="button" value="logga in" id="logInBtn">
+        </fieldset>
+        <div id="rhinoDiv">
+            <img src="rhino.jpg" alt="a rhino">
+        </div>
+        <footer>
+            <ul>
+                <li><i class="fas fa-phone-square-alt"></i>123-456-7890</li>
+                <li><i class="fas fa-envelope-square"></i><a href="mailto:support@somemail.com">support@somemail.com</a>
+                </li>
+                <li><i class="fab fa-facebook-square"></i><a href="http://facebook.com" target="_blank"
+                        rel="noopener noreferrer">Visit our facebook</a></li>
+                <li><i class="fab fa-twitter-square"></i><a href="http://twitter.com" target="_blank"
+                        rel="noopener noreferrer">Tweet at us</a></li>
+                <li><i class="fab fa-instagram"></i><a href="http://instagram.com" target="_blank"
+                        rel="noopener noreferrer">Follow us</a></li>
+            </ul>
+        </footer>
+
+    </div>
     <script src="script.js"></script>
 </body>
 
